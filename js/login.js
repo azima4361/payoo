@@ -4,5 +4,13 @@ document.getElementById("btn-login").addEventListener("click",function(event){
     console.log("login button clicked");
 
     const phoneNum = document.getElementById("phone-num").value;
-    console.log(phoneNum);
+    const pinNum = document.getElementById("pin-num").value;
+    console.log(phoneNum, pinNum);
+    if(phoneNum=== '5' && pinNum=== '1234'){
+        console.log("you are logged in");
+        window.location.href= "/home.html";
+    }
+    else{
+        alert("wrong phone number or pin");
+    }
 })
